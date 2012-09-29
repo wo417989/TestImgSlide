@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.sy.test.MyGallery
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:unselectedAlpha="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fadingEdge="none"
+        android:spacing="1dip"
+        android:id="@+id/my_gallery">
+    </com.sy.test.MyGallery>
+	<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/my_gallery"
+        android:background="#55000000"
+        android:gravity="center"
+        android:id="@+id/circle_images_layout">
+	    
+	</LinearLayout>
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="#55000000"
+	        android:id="@+id/img_resize_layout"
+	        android:visibility="gone">
+	    <ImageView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:id="@+id/iv_resize_img"/>
+	</RelativeLayout>
+</RelativeLayout>
